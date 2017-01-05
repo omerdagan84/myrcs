@@ -239,3 +239,5 @@ let g:ctrlp_cmd = 'CtrlP'
 " Python stuff
 nnoremap <silent> <F5> :!clear;python %<CR>
 
+
+set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"

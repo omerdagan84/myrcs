@@ -1,5 +1,5 @@
 [user]
-	email = omer.dagan@tandemg.com
+	email = omerx.dagan@intel.com
 	name = Omer Dagan
 [sendemail]
 	smtpencryption = tls
@@ -12,6 +12,7 @@
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore
+	gitproxy = /home/omerdagx/bin/gitproxy
 [push]
 	default = matching
 [diff]
@@ -29,3 +30,5 @@
 	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 	lg = !"git lg1"
 	mail = send-email --chain-reply-to --thread --compose --from=omer.dagan@tandemg.com
+[review "https://git-ger-8.devtools.intel.com/gerrit"]
+	username = omerdagx
