@@ -240,3 +240,5 @@ let g:ctrlp_cmd = 'CtrlP'
 nnoremap <silent> <F5> :!clear;python %<CR>
 
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+"set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
