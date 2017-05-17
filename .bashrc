@@ -140,3 +140,9 @@ fi
     fi
 
 export PATH=~/bin:$PATH
+
+st-ter(){
+  ORIG=$PS1
+    TITLE="\e]2;$@\a"
+	  PS1=${ORIG}${TITLE}
+}
