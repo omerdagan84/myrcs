@@ -97,7 +97,7 @@ fi
 
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -146,3 +146,10 @@ st-ter(){
     TITLE="\e]2;$@\a"
 	  PS1=${ORIG}${TITLE}
 }
+
+
+
+# Risco - connect to Cubox
+alias ssh_cubox='sshpass -p 'r1sc0' ssh -o StrictHostKeyChecking=no root@172.16.18.73'
+
+alias glog='git log --oneline -n'
