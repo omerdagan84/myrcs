@@ -147,13 +147,6 @@ st-ter(){
 	  PS1=${ORIG}${TITLE}
 }
 
-
-
-# Risco - connect to Cubox
-alias ssh_cubox='sshpass -p 'r1sc0' ssh -o StrictHostKeyChecking=no root@172.16.18.73'
-
 alias glog='git log --oneline -n'
-
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/user/.vimpkg/bin"
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/user/.vimpkg/bin:/home/user/.vimpkg/bin"
