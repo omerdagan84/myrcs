@@ -1,11 +1,12 @@
 [user]
-	email = omerd@riscogroup.com
+	email = omer.dagan@tandemg.com
 	name = Omer Dagan
 [sendemail]
 	smtpencryption = tls
-	smtpserver = smtp.gmail.com
-	smtpuser = omerdagan84@gmail.com
+	smtpserver = smtp.office365.com
+	smtpuser = omer.dagan@tandemg.com
 	smtpserverport = 587
+	smtpPass = nhrtgfxhkwjhynkw
 [color]
 	ui = auto
 [core]
