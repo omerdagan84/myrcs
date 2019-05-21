@@ -54,6 +54,7 @@ editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
 net_wireless = net_widgets.wireless({interface="wlp2s0",onclick="gnome-control-center"})
+net_wired = net_widgets.indicator({interfaces  = {"enp10s0"}, timeout     = 5,onclick="gnome-control-center" })
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -238,6 +239,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
 			net_wireless,
+			net_wired,
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
