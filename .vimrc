@@ -1,9 +1,28 @@
+set shell=/bin/bash
 " not-compatible mode - allow for VIM enhencments
 set nocp
 
 execute pathogen#infect()
-syntax on
+
+" Vundle setup
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()
 filetype plugin indent on
+
+let python_highlight_all=1
+syntax on
 
 " set color scheme of editor
 colorscheme monokai
@@ -37,6 +56,15 @@ set laststatus=2
 
 set showmatch
 set matchtime=5
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4|
+    \ set softtabstop=4|
+    \ set shiftwidth=4|
+    \ set textwidth=79|
+    \ set expandtab|
+    \ set autoindent|
+    \ set fileformat=unix|
 
 " if has('mouse')
 " 	set mouse=a " all mode
@@ -75,6 +103,8 @@ function! LoadCscope()
 		      endfunction
 		      au BufEnter /* call LoadCscope()
 
+
+let NERDTreeIgnore=['\.pyc$', '\~$']
 " ----------------------------------------
 " Enhanced commentify binding and settings
 " ----------------------------------------
@@ -123,9 +153,15 @@ let g:ycm_filetype_blacklist = {
 " -------------------------------------------
 "let g:ycm_key_list_select_completion=[]
 "let g:ycm_key_list_previous_completion=[]
-let g:ycm_key_list_select_completion = ["<C-TAB>","<Down>"]
-let g:ycm_key_list_previous_completion = ["<C-S-TAB>", "<Up>"]
-let g:SuperTabDefaultCompletionType = "<C-Tab>"
+
+"let g:ycm_key_list_select_completion = ["<C-TAB>","<Down>"]
+"let g:ycm_key_list_previous_completion = ["<C-S-TAB>", "<Up>"]
+"let g:SuperTabDefaultCompletionType = "<C-Tab>"
+
+let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-S-TAB>','<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 " NOTE: VisualComment,Comment,DeComment are plugin mapping(start with <Plug>),
 " so can't use remap here
