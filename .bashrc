@@ -149,4 +149,4 @@ st-ter(){
 
 alias glog='git log --oneline -n'
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/user/.vimpkg/bin:/home/user/.vimpkg/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/omerd/.vimpkg/bin:/home/omerd/.vimpkg/bin"

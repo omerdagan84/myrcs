@@ -7,7 +7,7 @@ execute pathogen#infect()
 " Vundle setup
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'tmhedberg/SimpylFold'
@@ -273,7 +273,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " Python stuff
-nnoremap <silent> <F5> :!clear;python %<CR>
+nnoremap <silent> <F5> :!clear;python3.6 %<CR>
 
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 

@@ -14,6 +14,7 @@ function mkdircd () {
 alias search=search_func
 #alias vpnd='sudo pkill openconnect'
 alias python=python3.6
+alias python2=python2.7
 alias glog='git log --oneline -n'
 
 # CD related alias
@@ -22,4 +23,4 @@ alias cd3="cd ../../.."
 alias cd4="cd ../../../.."
 alias cd5="cd ../../../../.."
 alias cd6="cd ../../../../../.."
-
+alias tyto="sshpass -p dagOM224 ssh omerd@192.168.6.156"
